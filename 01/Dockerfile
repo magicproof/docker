@@ -4,5 +4,8 @@ RUN apt-get update && apt-get -qq -y install curl libpng-dev
     
 RUN docker-php-ext-install gd mbstring
 
-CMD ["php", " -r 'phpinfo();'"]
+COPY . /var/www/myapp
+WORKDIR /var/www/myapp
+
+CMD [ "php", "./index.php" ]
 
