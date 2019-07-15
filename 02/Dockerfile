@@ -3,19 +3,22 @@ FROM php:7.1-fpm-alpine
 LABEL maintainer="magicproof@gmail.com"
 
 # istall mysql and httpd.conf
-RUN apk add --no-cache mysql-client  \
-    apache2 \
-    && docker-php-ext-install pdo pdo_mysql
+RUN docker-php-ext-install pdo pdo_mysql
 
-ENV APACHE_RUN_USER www-data \
-    && APACHE_RUN_GROUP www-data \
-    && APACHE_LOG_DIR /var/log/apache2
+# NGINX web server
+RUN  apk add --no-cache nginx
+COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY . /var/www//usr/localhost/htdocs/
-ADD httpd.conf /etc/apache2
-WORKDIR /var/www/html
-ENTRYPOINT ["/usr/sbin/httpd"]
+RUN  apk add --no-cache mysql mysql-client
+ENV  ROOT_PWD ackmodx
+COPY my.cnf /etc/mysql/my.cnf
+COPY mysql.sh /tmp/mysql.sh
+RUN  sh /tmp/mysql.sh && rm /tmp/mysql.sh
 
-CMD ["-DFOREGROUND"]
+COPY ./modx /home/modx
+WORKDIR /home/modx
+
+CMD [""]
 EXPOSE 80
+VOLUME ["/var/lib/mysql", "/home/modx"]
 
