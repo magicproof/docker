@@ -9,4 +9,4 @@ sleep 5
 ps axl
 ls -l /var/lib
 ps axl
-#/usr/bin/mysqladmin --protocol=tcp -u root password "${ROOT_PWD}"
+/usr/bin/mysqladmin -u root password "${ROOT_PWD}"
