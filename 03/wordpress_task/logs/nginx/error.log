@@ -1,2 +1,0 @@
-2019/07/24 10:41:50 [emerg] 1#1: host not found in upstream "wordpress" in /etc/nginx/conf.d/wordpress.conf:18
-2019/07/24 10:44:15 [emerg] 1#1: host not found in upstream "wordpress" in /etc/nginx/conf.d/wordpress.conf:18

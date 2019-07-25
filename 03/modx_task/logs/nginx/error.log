@@ -1,2 +1,47 @@
-2019/07/24 10:41:50 [emerg] 1#1: host not found in upstream "wordpress" in /etc/nginx/conf.d/wordpress.conf:18
-2019/07/24 10:44:15 [emerg] 1#1: host not found in upstream "wordpress" in /etc/nginx/conf.d/wordpress.conf:18
+2019/07/25 08:15:18 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:21 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:23 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:25 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:27 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:29 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:34 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:41 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:15:55 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:16:22 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:17:15 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:18:17 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:19:18 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:24 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:25 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:26 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:28 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:30 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:33 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:20:37 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:27 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:28 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:30 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:32 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:34 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:36 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:41 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 08:34:48 [emerg] 1#1: host not found in upstream "modx" in /etc/nginx/conf.d/modx.conf:18
+2019/07/25 09:03:28 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:30 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:31 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:33 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:34 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:37 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:42 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:03:49 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:04:03 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:04:30 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:55
+2019/07/25 09:05:20 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:05:22 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:05:23 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:05:24 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:05:26 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:05:29 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:05:33 [emerg] 1#1: cannot load certificate "/etc/nginx/server.crt": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/server.crt','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2019/07/25 09:06:10 [error] 8#8: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 172.29.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2019/07/25 09:06:10 [error] 8#8: *2 open() "/var/www/html/50x.html" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"

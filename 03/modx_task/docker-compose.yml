@@ -6,10 +6,13 @@ services:
     ports:
     - '80:80'
     volumes:
-    - ./nginx:/etc/nginx/conf.d
+    - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    - ./nginx/conf.d/:/etc/nginx/conf.d/:ro
     - ./logs/nginx:/var/log/nginx
-    - ./wordpress:/var/www/html
+    - ./modx:/var/www/html
     restart: always
+    depends_on:
+    - modx_fpm
   mysql:
     image: mysql:5.7
     ports:
@@ -22,18 +25,25 @@ services:
       MYSQL_PASSWORD: secret
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     restart: always
-  wordpress:
-    image: wordpress:php7.3-fpm
+  modx_fpm:
     user: "${UID:-1000}:${GID:-1000}"
+    container_name: "modx_fpm"
+    build: ./php-fpm
     ports:
     - '9000:9000'
     volumes:
-    - ./wordpress:/var/www/html
+    - ./modx:/var/www/html:rw
+    - ./php-fpm/config/php.ini:/usr/local/etc/php/php.ini:ro
     environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: homestead
-      WORDPRESS_DB_NAME: homestead
-      WORDPRESS_DB_PASSWORD: secret
+      MODX_VERSION: 2.7.0
+      MODX_DB_HOST: 'mysql:3306'
+      MODX_DB_PASSWORD: secret
+      MODX_DB_USER: homestead
+      MODX_DB_NAME: homestead
+    env_file:
+#      - ./mariadb/credentials.env
+    - ./php-fpm/paths.env
+    - ./php-fpm/modx_install.env
     depends_on:
     - mysql
     restart: always

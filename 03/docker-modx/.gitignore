@@ -1,0 +1,6 @@
+.git*
+/app/src/*
+/mysql/instance
+!.gitkeep
+!.gitignore
+!.github/
