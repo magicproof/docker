@@ -14,11 +14,11 @@ services:
     - /var/run/docker.sock:/var/run/docker.sock:ro
     - ./https-portal:/var/lib/https-portal
     environment:
-      DOMAINS: 'magicproof.tk -> http://wordpress:80'
+      DOMAINS: 'magicproof.ml -> http://wordpress:80'
       STAGE: 'production'
       WEBSOCKET: 'true'
       CLIENT_MAX_BODY_SIZE: '0'
-      # FORCE_RENEW: 'true'
+ #     FORCE_RENEW: 'true'
   mysql:
     image: mysql:5.7
     ports:
@@ -33,9 +33,9 @@ services:
     restart: always
   wordpress:
     image: wordpress
-#    user: "${UID:-1000}:${GID:-1000}"
-#    volumes:
-#    - ./wordpress:/var/www/html
+   # user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+    - ./wordpress:/var/www/html
     environment:
       WORDPRESS_DB_HOST: mysql
       WORDPRESS_DB_USER: homestead
