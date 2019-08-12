@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   https-portal:
-    image: steveltn/https-portal
+    image: steveltn/https-portal:latest
     ports:
     - '80:80'
     - '443:443'
@@ -33,9 +33,9 @@ services:
     restart: always
   wordpress:
     image: wordpress
-    user: "${UID:-1000}:${GID:-1000}"
-    volumes:
-    - ./wordpress:/var/www/html
+#    user: "${UID:-1000}:${GID:-1000}"
+#    volumes:
+#    - ./wordpress:/var/www/html
     environment:
       WORDPRESS_DB_HOST: mysql
       WORDPRESS_DB_USER: homestead
